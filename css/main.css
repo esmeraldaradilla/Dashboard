@@ -1,0 +1,156 @@
+/* seccion principal */
+body {
+  background-color: #e1e1e1;
+  font-family: 'Barlow', sans-serif;
+}
+
+.contenedor {
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+  padding: 20px 400px;
+  background-color: white;
+}
+
+#seccionContenido {
+  margin-left: 100px;
+  background-color: #e1e1e1;
+}
+
+#seccionContenido .contenedorTabs {
+   width: 34%;
+   color: white;
+   font-size: 1.5em;
+   margin-left: 340px;
+   /* border-bottom: lightgrey solid 2px; */
+}
+
+.contenedorTabs li {
+  list-style: none;
+  display: inline-block;
+  margin: 0, 10px;
+}
+
+.tab {
+  color: white;
+  background-color: #fcb425;
+  border-radius: 16%;
+  border-bottom: none;
+  padding: 10px;
+  width: 100px;
+}
+
+.divImg, .divTextTeachers{
+  display: inline-block;
+}
+
+.divTextStudents {
+   position: absolute;
+   margin: 54px 0 0 66px;
+   font-size: 20px;
+   padding: 26px;
+   background-color: white;
+}
+
+#seccionContenido li button:hover{
+  color: black;
+}
+
+select {
+  font-family: 'Barlow', sans-serif;
+  border: none;
+  margin-left: 66px;
+  height: 37px;
+  width: 438px;
+  font-size: 25px;
+}
+
+button {
+  font-family: 'Barlow', sans-serif;
+  margin: 3px;
+  font-size: 17px;
+  width: 100px;
+  margin-left: 24px;
+}
+
+/* seccion coders */
+.coder {
+  display: inline-block;
+  width: 73.5%;
+  margin: 34px 166px;
+  padding: 30px;
+  background-color: white;
+}
+
+.coder img {
+  display: inline-block;
+}
+
+#container-students {
+  margin-left: 240px;
+}
+
+.foto-coder, .nameActive {
+  display: inline-block;
+}
+
+.name {
+  font-size: 40px;
+  margin: 10px 0 51px 63px;
+  font-weight: bold;
+}
+
+.activo {
+  font-size: 23px;
+  margin: 0 0 0 60px;
+}
+
+.nameActive {
+  position: absolute;
+}
+
+/* seccion Overview */
+#first-section{
+  margin-top: 44px;
+}
+
+.graphics{
+  display: inline-block;
+  background-color: white;
+  width: 25%;
+  padding: 20px;
+  margin-left: 49px;
+}
+
+.enrolled, .dropout, .achievement, .total, .nps, .promoters {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin-left: 20px;
+  background-color: #f7f7f7;
+}
+
+.achievement, .nps{
+  font-size: 14px;
+}
+
+#second-section, #third-section{
+  padding: 20px;
+  background-color: white;
+  margin-top: 46px;
+  width: 90%;
+  margin-left: 40px;
+}
+
+.overall, .target, .average, .HSE {
+  display: inline-block;
+  text-align: center;
+  background-color: #f7f7f7;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.imagen, .imagen1 {
+  display: inline-block;
+  margin-left: 30px;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+  </head>
+  <body>
+    <section id="seccionInicial" class="contenedor">
+      <img src="assets/images/logo-laboratoria.svg" alt="">
+    </section>
+    <section id="seccionContenido">
+      <ul class="contenedorTabs">
+        <li> <button type="button" name="button" data-tab-seleccionado ="tabOverview" class="tab">OVERVIEW</button> </li>
+        <li> <button type="button" name="button" data-tab-seleccionado ="tabStudents" class="tab">STUDENTS</button> </li>
+        <li> <button type="button" name="button" data-tab-seleccionado ="tabTeachers" class="tab">TEACHERS</button> </li>
+      </ul>
+    </section>
+    <section>
+      <div class="">
+        <article id="overview" class="contenido">
+          <select onchange="generaciones(this.value)">
+            <option>Selecciona una sede y generación</option>
+            <option value = "AQP1" data-sede ="AQP" data-generacion ="2016-2">Arequipa Generación 2016-2</option>
+            <option value = "AQP2" data-sede ="AQP" data-generacion ="2017-1">Arequipa Generación 2017-1</option>
+            <option value = "CDMX1" data-sede ="CDMX" data-generacion ="2017-1">CDMX Generación 2017-1</option>
+            <option value = "CDMX2" data-sede ="CDMX" data-generacion ="2017-2">CDMX Generación 2017-2</option>
+            <option value= "Lima1" data-sede ="LIM" data-generacion ="2016-2">Lima Generacion 2016-2</option>
+            <option value= "Lima2" data-sede ="LIM" data-generacion ="2017-1">Lima Generacion 2017-1</option>
+            <option value= "Lima3" data-sede ="LIM" data-generacion ="2017-2">Lima Generacion 2017-2</option>
+            <option value= "SCL1" data-sede ="SCL" data-generacion ="2016-2">Chile Generación 2016-2</option>
+            <option value= "SCL2" data-sede = "SCL" data-generacion ="2017-1">Chile Generación 2017-1</option>
+            <option value= "SCL3" data-sede="SCL" data-generacion = "2017-2">Chile Generación 2017-2</option>
+          </select>
+          <section id="first-section">
+            <div class="graphics">
+              <h3>ENROLLMENT</h3>
+              <div class="enrolled">
+                <p># STUDENTS<br>CURRENTLY<br>ENROLLED</p>
+              </div>
+              <div class="dropout">
+                <p>% DROPOUT</p>
+              </div>
+              <img src="assets/images/bar-graph.png" alt="">
+            </div>
+
+            <div class="graphics">
+              <h3>ACHIEVEMENT</h3>
+              <div class="achievement">
+                <p># STUDENTS THAT MEET<br>THE TARGET</p>
+              </div>
+              <div class="total">
+                <p>% OF TOTAL</p>
+              </div>
+              <img src="assets/images/graph.png" alt="">
+            </div>
+            <div class="graphics">
+              <h3>NET PROMOTER SCOPE</h3>
+              <div class="nps">
+                <p>% ACUMULATIVE NPS</p>
+              </div>
+              <div class="promoters">
+                <p>60% Promoters</p>
+                <p>30% Passive</p>
+                <p>10% Detractors</p>
+              </div>
+              <img src="assets/images/bar-graph.png" alt="">
+            </div>
+          </section>
+          <section id="second-section">
+            <h3>TECH SKILLS</h3>
+            <div>
+              <div class="target">
+                <p># STUDENTS THAT MEET<br>THE TARGET</p>
+              </div>
+              <div class="overall">
+                <p>% OF TOTAL</p>
+              </div>
+            </div>
+
+            <div class="imagen">
+              <img src="assets/images/rectangular-graphic.png" width="650px" alt="">
+            </div>
+            <div class="imagen1">
+              <img src="assets/images/circle-graphic.png" width="300px" alt="">
+            </div>
+          </section>
+          <section id="third-section">
+            <h3>LIFE SKILLS</h3>
+            <div>
+              <div class="average">
+                <p># OVERALL<br>CLASS AVERAGE</p>
+              </div>
+              <div class="HSE">
+                <p># STUDENTS THAT MEET THE<br>TARGET</p>
+              </div>
+            </div>
+
+            <div class="imagen">
+              <img src="assets/images/rectangular-graphic.png" width="650px" alt="">
+            </div>
+            <div class="imagen1">
+              <img src="assets/images/circle-graphic.png" width="300px" alt="">
+            </div>
+          </section>
+          <section id="last-section">
+            <div class="graphics">
+              <h3>STUDENT SATISFACTION</h3>
+              <div class="enrolled">
+                <p># MEETING OR EXCEEDING<br>EXPECTATIONS (CUMULATIVE)</p>
+              </div>
+              <img src="assets/images/bar-graph.png" alt="">
+            </div>
+
+            <div class="graphics">
+              <h3>TEACHER RATING</h3>
+              <div class="achievement">
+                <p>OVERALL TEACHER RATING<br>(CUMULATIVE)</p>
+              </div>
+              <img src="assets/images/graph.png" alt="">
+            </div>
+            <div class="graphics">
+              <h3>JEDI MASTER RATING</h3>
+              <div class="nps">
+                <p>OVERALL JEDI RATING<br>(CUMULATIVE)</p>
+              </div>
+              <img src="assets/images/bar-graph.png" alt="">
+            </div>
+          </section>
+        </article>
+
+
+        <section id="students" class="contenido">
+          <div class="divTextStudents">
+            <h3>Specialization</h3>
+            <ul>
+              <li>Javascript</li>
+              <li>UX Designer</li>
+              <li>Front end designer</li>
+            </ul>
+          </div>
+
+          <div class="opciones">
+            <select onchange="selectOption(event)">
+              <option>Selecciona una sede y generación</option>
+              <option value = "AQP1" data-sede ="AQP" data-generacion ="2016-2">Arequipa Generación 2016-2</option>
+              <option value = "AQP2" data-sede ="AQP" data-generacion ="2017-1">Arequipa Generación 2017-1</option>
+              <option value = "CDMX1" data-sede ="CDMX" data-generacion ="2017-1">CDMX Generación 2017-1</option>
+              <option value = "CDMX2" data-sede ="CDMX" data-generacion ="2017-2">CDMX Generación 2017-2</option>
+              <option value= "Lima1" data-sede ="LIM" data-generacion ="2016-2">Lima Generacion 2016-2</option>
+              <option value= "Lima2" data-sede ="LIM" data-generacion ="2017-1">Lima Generacion 2017-1</option>
+              <option value= "Lima3" data-sede ="LIM" data-generacion ="2017-2">Lima Generacion 2017-2</option>
+              <option value= "SCL1" data-sede ="SCL" data-generacion ="2016-2">Chile Generación 2016-2</option>
+              <option value= "SCL2" data-sede = "SCL" data-generacion ="2017-1">Chile Generación 2017-1</option>
+              <option value= "SCL3" data-sede="SCL" data-generacion = "2017-2">Chile Generación 2017-2</option>
+            </select>
+          </div>
+
+          <div id="container-students">
+            <!-- <span class="2016-2"></span> -->
+          </div>
+
+        </section>
+        <article id="teachers" class="teachers">
+          <div class="divImg">
+            <img src="http://lorempixel.com/200/200/people/" alt="">
+          </div>
+          <div class="divTextTeachers">
+            <h3>Teachers</h3>
+            <ul>
+              <li>Teacher rating</li>
+              <li>Jedi Master Rating</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+  </body>
+</html>
